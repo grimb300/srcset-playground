@@ -1,4 +1,16 @@
 .hero-image > h1 {
   text-align: center;
-  color: lightgray;
+  color: lightgray; 
 }
+
+.hero-image > img {
+  width: 100%;
+}
+
+#img-only {
+  display: none;
+}
+
+/* #picture-img {
+  display: none;
+} */

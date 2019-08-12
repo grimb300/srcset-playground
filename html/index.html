@@ -13,14 +13,35 @@
 </head>
 <body>
   <div class="hero-image">
-    <img  srcset="assets/images/HeroImageMock-landscape-640.jpg  640w,
+    <picture>
+      <source media="(orientation: landscape)"
+              srcset="assets/images/HeroImageMock-landscape-640.jpg  640w,
+                      assets/images/HeroImageMock-landscape-768.jpg  768w,
+                      assets/images/HeroImageMock-landscape-1024.jpg 1024w,
+                      assets/images/HeroImageMock-landscape-1366.jpg 1366w,
+                      assets/images/HeroImageMock-landscape-1600.jpg 1600w,
+                      assets/images/HeroImageMock-landscape-1920.jpg 1920w">
+      <source media="(orientation: portrait)"
+              srcset="assets/images/HeroImageMock-portrait-360.jpg  360w,
+                      assets/images/HeroImageMock-portrait-432.jpg  432w,
+                      assets/images/HeroImageMock-portrait-576.jpg  576w,
+                      assets/images/HeroImageMock-portrait-768.jpg  768w,
+                      assets/images/HeroImageMock-portrait-900.jpg  900w,
+                      assets/images/HeroImageMock-portrait-1080.jpg 1080w">
+      <img  id="picture-img"
+            src="assets/images/HeroImageMock-landscape-640.jpg"
+            alt="Solid purple background image">
+    </picture>
+    <img  id="img-only"
+          srcset="assets/images/HeroImageMock-landscape-640.jpg  640w,
                   assets/images/HeroImageMock-landscape-768.jpg  768w,
                   assets/images/HeroImageMock-landscape-1024.jpg 1024w,
                   assets/images/HeroImageMock-landscape-1366.jpg 1366w,
                   assets/images/HeroImageMock-landscape-1600.jpg 1600w,
                   assets/images/HeroImageMock-landscape-1920.jpg 1920w"
           sizes="100vw"
-          src="assets/images/HeroImageMock-landscape-1920.jpg" alt="Solid purple background image">
+          src="assets/images/HeroImageMock-landscape-640.jpg"
+          alt="Solid purple background image">
     <h1>Playing with srcset responsive images</h1>
   </div>
 </body>
